@@ -10,8 +10,8 @@ df = pd.read_csv('train.csv')
 spalten = ['GrLivArea', 'BedroomAbvGr', 'FullBath', 'OverallQual', 'SalePrice']
 df = df[spalten].dropna()
 
-X = df[['GrLivArea', 'BedroomAbvGr', 'FullBath', 'OverallQual']] # Features
-y = df['SalePrice']                                             # Zielvariable
+X = df[['GrLivArea', 'BedroomAbvGr', 'FullBath', 'OverallQual']] 
+y = df['SalePrice']                                             
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
